@@ -41,10 +41,11 @@ public extension Float {
 
 /**
  CGFloat 类型的随机数
+ 不支持Scale
  */
 public extension CGFloat {
-    static func randomCGFloatNumber(lower: CGFloat = 0,upper: CGFloat = 1, scale: Int? = 2) -> CGFloat {
-        return CGFloat(Float.randomFloatNumber(lower: Float(lower), upper: Float(upper), scale: scale));
+    static func randomCGFloatNumber(lower: CGFloat = 0,upper: CGFloat = 1) -> CGFloat {
+        return  CGFloat(Float.randomFloatNumber(lower: Float(lower), upper: Float(upper)));
     }
 }
 
